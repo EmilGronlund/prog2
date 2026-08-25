@@ -1,10 +1,22 @@
+class Person:
+    def __init__(self):
+        self.förnamn = ""
+        self.efternamn = ""
+        self.födelseår = ""
+        self.singel = True
+
 class Bil:
     def __init__(self):
+        self.ägare = None
         self.regnummer = ""
         self.fabrikat = ""
         self.årsmodell = ""
         self.tjänstevikt = ""
         self.motoreffekt = ""
+
+b = Bil()
+b.ägare = Person()
+b.ägare.förnamn = "Bertil"
 
 bil_1 = Bil()
 bil_1.regnummer = "NDE384"

@@ -5,11 +5,11 @@ class Person:
         self.födelseår = ""
         self.singel = True
 
-person1 = Person()
-person1.förnamn = "Moa"
-person1.efternamn = "Bergquist"
-person1.födelseår = "2001"
-person1.singel = True
+class Bankkonto:
+    def __init__(self):
+        self.kontohavare = None
+        self.saldo = 0
 
-
-print(person1.förnamn)
+k = Bankkonto()
+k.kontohavare = Person()
+k.kontohavare.förnamn = "Bertil"
