@@ -6,31 +6,17 @@ class Person:
         self.singel = True
 
 class Bil:
-    def __init__(self):
-        self.ägare = None
-        self.regnummer = ""
-        self.fabrikat = ""
-        self.årsmodell = ""
-        self.tjänstevikt = ""
-        self.motoreffekt = ""
+    def __init__(self, ägare=None, regnummer="", fabrikat="", årsmodell="", tjänstevikt="", motoreffekt=""):
+        self.ägare = ägare
+        self.regnummer = regnummer
+        self.fabrikat = fabrikat
+        self.årsmodell = årsmodell
+        self.tjänstevikt = tjänstevikt
+        self.motoreffekt = motoreffekt
 
-b = Bil()
-b.ägare = Person()
-b.ägare.förnamn = "Bertil"
+bil_1 = Bil(Person(), "NDE384", "Volvo", "2015", "1650 kg", "181 hk")
 
-bil_1 = Bil()
-bil_1.regnummer = "NDE384"
-bil_1.fabrikat = "Volvo"
-bil_1.årsmodell = "2015"
-bil_1.tjänstevikt = "1650 kg"
-bil_1.motoreffekt = "181 hk"
-
-bil_2 = Bil()
-bil_2.regnummer = "SJY467"
-bil_2.fabrikat = "Audi"
-bil_2.årsmodell = "2018"
-bil_2.tjänstevikt = "1580 kg"
-bil_2.motoreffekt = "150 hk"
+bil_2 = Bil(Person(), "SJY467", "Audi", "2018", "1580 kg", "150 hk")
 
 print(bil_1.regnummer)
 print(bil_1.fabrikat)
