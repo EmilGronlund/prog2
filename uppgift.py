@@ -17,4 +17,9 @@ class Rektangel:
     def omkrets(self):
         return 2 * (self.höjd + self.bredd)
 
-r = Rektangel(10, 20, 5, 8)
+rektangel1 = Rektangel(1, 2, 0, 0)
+rektangel1.sätt_höjd(7)
+rektangel1.sätt_bredd(11)
+
+print(rektangel1.area())
+print(rektangel1.omkrets())
